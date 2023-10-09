@@ -1,0 +1,6 @@
+{
+    "_base_": "../../hrda/samsung_losstest.py",
+    "name": "230919_1446_testestestestestestest_fc19a",
+    "work_dir": "work_dirs/local-basic/230919_1446_testestestestestestest_fc19a",
+    "git_rev": "f8aa28923b03afc3ec5686f4da176eea73083db8"
+}

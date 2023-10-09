@@ -1,0 +1,6 @@
+{
+    "_base_": "../../hrda/samsung_0919_aug.py",
+    "name": "230920_1537_distortion_samsung_newaug_c4da6",
+    "work_dir": "work_dirs/local-basic/230920_1537_distortion_samsung_newaug_c4da6",
+    "git_rev": "f8aa28923b03afc3ec5686f4da176eea73083db8"
+}

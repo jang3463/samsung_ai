@@ -1,0 +1,6 @@
+{
+    "_base_": "../../hrda/samsung.py",
+    "name": "230912_2134_t1_hrda_samsung_b75f2",
+    "work_dir": "work_dirs/local-basic/230912_2134_t1_hrda_samsung_b75f2",
+    "git_rev": "f8aa28923b03afc3ec5686f4da176eea73083db8"
+}
