@@ -8,8 +8,9 @@ https://dacon.io/competitions/official/236132/overview/description
 
 ## 2. 데이터셋 설명
 - train_source_image (폴더) : 왜곡이 존재하지 않는 train 이미지(Source Domain)
-![Train 0001](https://github.com/jang3463/samsung_ai/assets/70848146/f3cf5886-e8d1-4abc-982b-46f166504a89)
-<img width="800" height="400" alt="image" src="https://github.com/jang3463/samsung_ai/assets/70848146/f3cf5886-e8d1-4abc-982b-46f166504a89">
+<img width="400" height="200" alt="image" src="https://github.com/jang3463/samsung_ai/assets/70848146/f3cf5886-e8d1-4abc-982b-46f166504a89">
+
+
 - train_source_gt (폴더) : 왜곡이 존재하지 않는 train 이미지(Source Domain)의 mask
 ![output2](https://github.com/jang3463/samsung_ai/assets/70848146/af92d2bf-035d-4f8d-ac11-52b2102aba72)
 - train_target_image (폴더) : 왜곡된 이미지(Target Domain) => 200도의 시야각(200° F.O.V)을 가지는 어안렌즈 카메라로 촬영된 이미지
