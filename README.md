@@ -19,18 +19,13 @@ https://dacon.io/competitions/official/236132/overview/description
 ![TEST_0001](https://github.com/jang3463/samsung_ai/assets/70848146/8d67e571-c3a1-4d94-8955-0105571bc195)
 
 ## 3. 수행방법
-- 본 과제는 블랙박스 영상으로부터 자동차의 충돌 상황을 분석하는 AI 모델을 개발하는 것
-- 본 데이터의 LABEL는 위의 이미지처럼 분할이 가능함
-- label을 crash, weather, timing으로 분할하여 multi_label_classification 문제로 변환
-- 모델로는 slowfast_r101, MVITv2_B_32x3, r3d_18을 사용해본 결과, r3d_18이 성능이 가장 좋았음
-- 최종적으로 carsh는 r3d_18 모델 사용, weather, timing은 영상에서 각 5개의 이미지를 random으로 추출하고 convnext_large 모델 사용
-- 각 label별로 병렬적으로 임베딩 추출하여 concat
+- 본 과제는 왜곡이 존재하지 않는 이미지(Source Domain)와 레이블을 활용하여, 왜곡된 이미지(Target Domain)에 대해서도 고성능의 이미지 분할(Semantic Segmentation)을 수행하는 AI 알고리즘 개발을 개발하는 것
+- 먼저 Unsupervised Domain Adaptation 방법 중 SOTA인 [HRDA(Context-Aware High-Resolution Domain-Adaptive Semantic Segmentation)](https://github.com/lhoyer/HRDA) 적용
+- 하지만 위 방법은 이미지의 광도와 질감(Photometry and Texture)의 Domain gap에서는 잘 작동하지만 이미지의 광학 왜곡적인 부분의 Domain에서는 잘 작동하지 않음
+- 이 부분을 해결하기 위해 Domain adaptation을 적용하기 전, Opencv를 사용해 Affine 변환, LensDistortion 변환을 이미지에 적용하여 성능을 향상시킴
 - 최종적으로 LB miou 0.58739 달성
 - 예측 결과 example
 ![mask_1](https://github.com/jang3463/samsung_ai/assets/70848146/fcceeefe-248d-4929-996c-63503deb7068)
-
-## 4. 한계점
-- 데이터 특성상 클래스 불균형도 심하고 잘못 labeling 된 데이터도 포함되어 있어서 쉽지 않은 대회였음
 
 ## Team member
 장종환 (개인 참가)
