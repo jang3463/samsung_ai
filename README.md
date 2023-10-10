@@ -16,7 +16,7 @@ https://dacon.io/competitions/official/236132/overview/description
 - val_source_image (폴더) : 왜곡이 존재하지 않는 validation 이미지(Source Domain)
 - val_source_gt (폴더) : 왜곡이 존재하지 않는 validation 이미지(Source Domain)의 mask
 - test_image (폴더) : 추론해야하는 이미지(Target Domain)
-![TRAIN_TARGET_0007](https://github.com/jang3463/samsung_ai/assets/70848146/18bcbec4-120f-424c-9230-a0a31ac82fb8)
+![TEST_0001](https://github.com/jang3463/samsung_ai/assets/70848146/8d67e571-c3a1-4d94-8955-0105571bc195)
 
 ## 3. 수행방법
 - 본 과제는 블랙박스 영상으로부터 자동차의 충돌 상황을 분석하는 AI 모델을 개발하는 것
